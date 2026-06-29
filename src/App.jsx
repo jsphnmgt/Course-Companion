@@ -1,5 +1,6 @@
 import Flashcards from './Flashcards.jsx'
 import { useState } from "react"
+import styles from './styling.module.css'
 
 // ───────────────────────────────────────────────────────────────────────────
 // App - the Course Companion (Part A: docs reader) + the flashcards (Part B)
@@ -16,6 +17,8 @@ const topics = [
   {label: "Topic 1", content: "Content for Topic 1"},
   {label: "Topic 2", content: "Content for Topic 2"},
   {label: "Topic 3", content: "Content for Topic 3"},
+  {label: "Topic 4", content: "Content for Topic 4"},
+  {label: "Topic 5", content: "Content for Topic 5"},
 ]
 
 export default function App() {
@@ -23,7 +26,7 @@ export default function App() {
   const current = topics[selected]
  
   return (
-    <div style={{ fontFamily: 'system-ui, sans-serif', padding: '2rem' }}>
+    <div>
       <h1>Course Companion</h1>
       <nav>
         {topics.map((topic, index) => (
