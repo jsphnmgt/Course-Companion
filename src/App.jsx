@@ -1,4 +1,5 @@
 import Flashcards from './Flashcards.jsx'
+import { useState } from "react"
 
 // ───────────────────────────────────────────────────────────────────────────
 // App - the Course Companion (Part A: docs reader) + the flashcards (Part B)
@@ -11,11 +12,28 @@ import Flashcards from './Flashcards.jsx'
 // The starter below is just a placeholder so `npm run dev` shows something.
 // Replace it with your real layout.
 
+const topics = [
+  {label: "Topic 1", content: "Content for Topic 1"},
+  {label: "Topic 2", content: "Content for Topic 2"},
+  {label: "Topic 3", content: "Content for Topic 3"},
+]
+
 export default function App() {
+  const[selected, setSelected] = useState(0)
+  const current = topics[selected]
+ 
   return (
     <div style={{ fontFamily: 'system-ui, sans-serif', padding: '2rem' }}>
       <h1>Course Companion</h1>
-      <p>TODO: build the docs reader (a nav of topics + a content area).</p>
+      <nav>
+        {topics.map((topic, index) => (
+          <button key={index} onClick={() => setSelected(index)}>{topic.label}</button>))}
+      </nav>
+
+      <main>
+        <h2>{current.label}</h2>
+        <p>{current.content}</p>
+      </main>
       <Flashcards />
     </div>
   )
