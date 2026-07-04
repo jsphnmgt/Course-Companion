@@ -40,7 +40,6 @@ export default function App() {
 
         <div className={styles['docs-area']}>
           <img src="/grid.png" alt="grid" className={styles.grid}/>
-
           <div className={styles['docs-left']}>
             <img src="/jiji1.png" alt="jiji 1" className={styles.jiji1}/>
             <img src="/totoro.png" alt="totoro" className={styles.totoro}/>

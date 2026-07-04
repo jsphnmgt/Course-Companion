@@ -286,6 +286,7 @@ input:focus {
   margin-bottom: 0.35rem;
   margin-left: 7rem;
   margin-right: 7rem;
+  word-break: break-word;
 }
 
 [data-testid="flashcard"] {
@@ -306,6 +307,7 @@ input:focus {
   font-size: 1.8rem;
   margin: 0.6rem 2rem;
   flex: 1;
+  word-break: break-word;
 }
 
 [data-testid="flashcard"] button {
