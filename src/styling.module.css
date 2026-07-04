@@ -281,7 +281,7 @@ input:focus {
 }
 
 .card-question {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: var(--text-gray);
   margin-bottom: 0.35rem;
   margin-left: 7rem;
@@ -340,12 +340,11 @@ input:focus {
   main p {
     font-size: 1.2rem;
     padding: 1.5rem 2.5rem;
+    margin: 0.5rem auto;
   }
 
   main h2 {
     font-size: 2rem;
-    margin-left: 0;
-    text-align: center;
   }
 
   .docs-area {
@@ -358,19 +357,69 @@ input:focus {
   }
 
   .jiji1 {
-    display: none;
+    margin-left: 4rem;
+    max-width: 90px;
   }
 
   .totoro {
-    display: none;
+    margin-left: 4.4rem;
+    max-width: 70px;
   }
 
   .jiji2 {
-    display: none;
+    position: absolute;
+    margin-left: 10rem;
+    margin-top: -5rem;
+    max-width: 50px;
   }
 
   .cat {
-    display: none;
+    max-width: 80px;
+    margin-left: -4rem;
+  }
+
+  section h2 {
+    font-size: 2.3rem;
+    margin-left: 3%;
+  }
+
+  input {
+    max-width: 55%;
+    font-size: 1.2rem;
+    margin-left: 2%;
+    border: 3px solid var(--text-qa-fd-add);
+  }
+
+  .answer-row button {
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+    border: 3px solid var(--text-qa-fd-add);
+  }
+
+  .card-question {
+    font-size: 1.2rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+
+  [data-testid="flashcard"] {
+    padding: 0.6rem 0.6rem;
+    margin: 0 auto 1rem auto;
+    border: 3px solid var(--card-stroke);
+  }
+
+  [data-testid="flashcard"] p {
+    font-size: 1.2rem;
+    margin: 0.4rem 1rem;
+  }
+
+  [data-testid="flashcard"] button {
+    font-size: 1rem;
+    border: 3px solid var(--card-stroke);
+  }
+
+  .cards-list {
+    margin-top: 1rem;
   }
 }
 
