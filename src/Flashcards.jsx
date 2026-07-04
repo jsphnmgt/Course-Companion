@@ -1,4 +1,5 @@
-import { use, useState } from "react"
+import { useState } from "react"
+import styles from './styling.module.css'
 // ───────────────────────────────────────────────────────────────────────────
 // Flashcards - the flashcard generator (Part B of the project)
 // ───────────────────────────────────────────────────────────────────────────
@@ -55,20 +56,29 @@ export default function Flashcards() {
         value={question}
         onChange={(e) => setQuestion(e.target.value)}
       />
-      <input
-        placeholder="Answer"
-        value={answer}
-        onChange={(e) => setAnswer(e.target.value)}
-      />
-      <button onClick={addCard}>Add card</button>
+      <div className={styles['answer-row']}>
+        <input
+          placeholder="Answer"
+          value={answer}
+          onChange={(e) => setAnswer(e.target.value)}
+        />
+        <button onClick={addCard}>Add card</button>
+      </div>
 
-      <div>
+      <div className={styles['cards-list']}>
         {cards.map((card, index) => (
-          <div key={index} data-testid="flashcard">
-            <p>{card.question}</p>
-            {flip[index] && <p>{card.answer}</p>}
-            <button onClick={() => flipCard(index)}>Flip</button>
-            <button onClick={() => deleteCard(index)}>Delete</button>
+          <div key={index} className={styles['card-wrapper']}>
+            <p className={styles['card-question']}>{card.question}</p>
+            
+            <div data-testid="flashcard">
+              {flip[index] ? <p>{card.answer}</p> : <p>Flip to see the answer</p>}
+
+              <div className={styles['card-buttons']}>
+                <button onClick={() => flipCard(index)}>Flip</button>
+                <button onClick={() => deleteCard(index)}>Delete</button>
+              </div>
+
+            </div>
           </div>
         ))}
       </div>
