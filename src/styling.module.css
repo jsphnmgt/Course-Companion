@@ -328,6 +328,10 @@ input:focus {
   .soot-sprite {
     display: none;
   }
+
+  nav button {
+    font-size: 1.8rem;
+  }
 }
 
 @media (min-width: 901px) and (max-width: 1200px) {
