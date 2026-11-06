@@ -40,3 +40,5 @@ Flashcards are held in memory and reset when the page reloads.
 - `public/`: decorative images.
 - `test/`: app and flashcard tests.
 - `.github/workflows/test.yml`: automated tests and build checks.
+
+The project began with a course template; original attribution is retained in [NOTICE](https://github.com/jsphnmgt/my-bookshelf/blob/main/NOTICE).
