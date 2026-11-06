@@ -1,5 +1,5 @@
 {
-  "name": "module-3-activity-1-course-companion",
+  "name": "course-companion",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -22,5 +22,6 @@
     "jsdom": "^25.0.1",
     "vite": "^5.4.8",
     "vitest": "^2.1.1"
-  }
+  },
+  "description": "A science topic reader and flashcard study app."
 }

@@ -5,3 +5,6 @@ dist/
 .claude/
 test-results.json
 .vit.json
+coverage/
+*.log
+.cleanup-backup-*.zip

@@ -2,16 +2,6 @@ import Flashcards from './Flashcards.jsx'
 import { useState } from "react"
 import styles from './styling.module.css'
 
-// ───────────────────────────────────────────────────────────────────────────
-// App - the Course Companion (Part A: docs reader) + the flashcards (Part B)
-// ───────────────────────────────────────────────────────────────────────────
-//
-// Build the docs reader here: a <nav> listing at least 3 topics, and a content
-// area that shows the selected topic (use state or React Router). Style it with
-// your chosen approach. Then render <Flashcards /> somewhere on the page.
-//
-// The starter below is just a placeholder so `npm run dev` shows something.
-// Replace it with your real layout.
 
 const topics = [
   {label: "Biology", content: "Biology is the study of living organisms and their interactions with the environment. It covers topics such as cell structure, genetics, evolution, and ecosystems. From the smallest microbes to the largest mammals, biology helps us understand how life works, adapts, and thrives on Earth."},
